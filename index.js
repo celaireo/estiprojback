@@ -18,7 +18,7 @@ const db = mysql.createConnection({
 
 //EMPLOYES
 
-app.post("/employes", (req, res) => {
+app.post("/employees", (req, res) => {
   const { Nom_employe, Prenom_employe, Email_employe, Mdp_employe, date } = req.body;
 
   db.query(
