@@ -34,7 +34,7 @@ app.post("/employes", (req, res) => {
   );
 });
 
-app.get("/employees", (req, res) => {
+app.get("/employes", (req, res) => {
   db.query("SELECT * FROM employe", (err, result) => {
     if (err) {
       console.log(err);
