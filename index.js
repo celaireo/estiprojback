@@ -35,7 +35,7 @@ app.post("/employes", (req, res) => {
 });
 
 app.get("/employes", (req, res) => {
-  db.query("SELECT * FROM employes", (err, result) => {
+  db.query("SELECT * FROM employe", (err, result) => {
     if (err) {
       console.log(err);
     } else {
@@ -50,7 +50,7 @@ app.put("/employes/:id", (req, res) => {
 
   db.query(
     "UPDATE employe SET Nom_employe = ?, Prenom_employe = ?, Email_employe = ?, Mdp_employe = ?, date = ? WHERE Id_employe = ?",
-    [Nom_employe, Prenom_employe, Email_employe, Mdp_employe, date, id],
+w    [Nom_employe, Prenom_employe, Email_employe, Mdp_employe, date, id],
     (err, result) => {
       if (err) {
         console.log(err);
